@@ -82,6 +82,7 @@ implement to enhance this app, if time permits.
     - [ ] Display the current order summary, including item names, prices, and total cost.
     - [ ] Provide an option to add tips to the order total.
     - [ ] Ensure users can remove items from the order before finalizing it.
+    - [ ] Teams should utilize browser's local storage to store order data.
 
 -   Payment Processing
 
@@ -141,6 +142,7 @@ implement to enhance this app, if time permits.
       - view a summary of their current order,
       - add tips to their order total,
       - remove items from their order before finalizing it.
+  - [ ] App uses browser local storage for storing user credit and order data.
 
 - Payment Processing
 
