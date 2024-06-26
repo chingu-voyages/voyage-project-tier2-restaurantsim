@@ -1,4 +1,4 @@
-# voyage-project-tier1-restaurant-simulator
+# voyage-project-tier2-restaurant-simulator
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ From ancient civilizations like Rome and China to the bustling kitchens of 18th-
 
 ![The Oldest Restaurant In (Almost) Every Country](./assets/the_oldest_restaurants.jpg)
 
-In this voyage, your team will create and manage your dream restaurant, from designing the menu to handling customer orders and managing finances. Get ready to unleash your creativity and business skills in the exciting world of restaurant simulation!
+In this voyage, your team will create and manage your dream restaurant network. You'll design menus, handle customer orders, manage online deliveries across multiple restaurants, and oversee finances. Get ready to unleash your creativity and business skills in the exciting world of restaurant simulation!
 
 Bon appétit and happy managing!
 
@@ -54,7 +54,6 @@ implement to enhance this app, if time permits.
 - [ ] This is a purely frontend application. No backend is required.
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
-- [ ] We've included a JSON file containing the raw data in the /assets directory in this repo. But, if you choose, you may use the Menus API instead.
 - [ ] Useful links and resources:
   - [Menus API](https://menus-api.vercel.app/)
 
@@ -71,16 +70,19 @@ implement to enhance this app, if time permits.
     - [ ] Develop a single-page application (SPA) that simulates a restaurant menu and ordering system.
 
 -   Menu Fetching and Display
-    - [ ] Fetch menu data from the provided JSON file.
-    - [ ] Display the fetched menu items in respective categories on the page.
-    - [ ] Ensure the menu includes images, names and prices for each item.
-    
+    - [ ] Fetch menu data from the Menus API to retrieve restaurant data.
+    - [ ] Ensure the menu includes images, food names, prices, restaurant names and country for each item.
+    - [ ] Implement filter functionality to display menu items by category.
+    - [ ] Display restaurants on an interactive map using a mapping API (e.g., Google Maps).
+    - [ ] Upon clicking a specific restaurant on map, dynamically fetch and display its menu items.  
+
 -   Order Management
 
     - [ ] Implement functionality to add menu items to an order.
     - [ ] Display the current order summary, including item names, prices, and total cost.
     - [ ] Provide an option to add tips to the order total.
     - [ ] Ensure users can remove items from the order before finalizing it.
+    - [ ] Teams should utilize browser's local storage to store order data.
 
 -   Payment Processing
 
@@ -100,24 +102,38 @@ implement to enhance this app, if time permits.
 
 - Menu Customization
 
-  - [ ] Implement search functionality based on ratings.
-  - [ ] Utilize the Menus API to retrieve restaurant data and dynamically add more categories to the menu.
-  - [ ] Implement filters and search functionality to easily find specific menu items.
+  - [ ] Dynamically add more categories to the menu.
+  - [ ] Implement search functionality by food names, prices and country.
 
 
 ## Acceptance Criteria
 
 - Menu Fetching and Display
 
-  - [ ] The application should fetch menu data from the provided JSON file and categorize it by:
-      - meals,
+  - [ ] The application should fetch menu data from the provided API and display at least six categories from folowing:
+      - bbqs,
+      - breads,
+      - burgers,
+      - chocolates,
+      - desserts,
       - drinks,
-      - desserts.
+      - fried-chicken,
+      - ice-cream, 
+      - pizzas,
+      - porks,
+      - sandwiches,
+      - sausages,
+      - steaks
   - [ ] All menu items must be displayed with:
       - images, 
-      - names, 
+      - food names, 
       - prices.
-  - [ ] Users should be able to view the menu in an organized manner, with categories clearly delineated.
+      - restaurant names,
+      - country
+  - [ ] Users should be able to:
+      - filter category menu items and see menu items from the chosen category.
+      - see all restaurants on the map.
+      - view menu items upon clicking on the specific restaurant.
 
 - Order Management
 
@@ -126,6 +142,7 @@ implement to enhance this app, if time permits.
       - view a summary of their current order,
       - add tips to their order total,
       - remove items from their order before finalizing it.
+  - [ ] App uses browser local storage for storing user credit and order data.
 
 - Payment Processing
 
