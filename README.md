@@ -72,8 +72,9 @@ implement to enhance this app, if time permits.
 -   Menu Fetching and Display
     - [ ] Fetch menu data from the Menus API to retrieve restaurant data.
     - [ ] Ensure the menu includes images, food names, prices, restaurant names and country for each item.
-    - [ ] Implement search functionality to easily find menu items from specific restaurant.
     - [ ] Implement filter functionality to display menu items by category.
+    - [ ] Display restaurants on an interactive map using a mapping API (e.g., Google Maps).
+    - [ ] Upon clicking a specific restaurant on map, dynamically fetch and display its menu items.  
 
 -   Order Management
 
@@ -129,8 +130,9 @@ implement to enhance this app, if time permits.
       - restaurant names,
       - country
   - [ ] Users should be able to:
-      - search restaurants by name and see their menu items.
       - filter category menu items and see menu items from the chosen category.
+      - see all restaurants on the map.
+      - view menu items upon clicking on the specific restaurant.
 
 - Order Management
 
